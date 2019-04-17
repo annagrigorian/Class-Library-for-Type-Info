@@ -9,11 +9,11 @@ namespace ClassLibrary1
     {
         private Type type;
 
-        public TypeInfo(object type)
+        public TypeInfo(Type type)
         {
             try
             {
-                this.type = type.GetType();
+                this.type = type;
             }
             catch (ArgumentException exc)
             {
@@ -23,6 +23,8 @@ namespace ClassLibrary1
             {
                 throw;
             }
+
+            Console.WriteLine(type.Name);
         }
       
         #region Info Methods

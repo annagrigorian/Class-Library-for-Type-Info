@@ -11,7 +11,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            TypeInfo t = new TypeInfo("i");
+            TypeInfo t = new TypeInfo(typeof(int));
 
             t.GetMethods();
 
