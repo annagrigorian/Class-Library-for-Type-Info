@@ -13,6 +13,8 @@ namespace ConsoleApp1
         {
             TypeInfo t = new TypeInfo(typeof(int));
 
+            t.GetName();
+
             t.GetMethods();
 
             t.GetInterfaces();

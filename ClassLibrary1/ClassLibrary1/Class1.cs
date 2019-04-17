@@ -10,24 +10,18 @@ namespace ClassLibrary1
         private Type type;
 
         public TypeInfo(Type type)
-        {
-            try
-            {
-                this.type = type;
-            }
-            catch (ArgumentException exc)
-            {
-                Console.WriteLine(exc.Message);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-
-            Console.WriteLine(type.Name);
+        {           
+            this.type = type;
         }
-      
+
         #region Info Methods
+
+        public void GetName()
+        {
+            Console.WriteLine();
+            Console.WriteLine(type.Name);
+            Console.WriteLine();
+        }
 
         public void GetMethods()
         {
